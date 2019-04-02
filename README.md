@@ -26,7 +26,7 @@
          var text=document.getElementById('textid').value;
          if(isEmpty(text)){
          document.getElementById("textid").innerHTML = "Enter Text";
-         document.getElementById("text_name").focus();
+         document.getElementById("text1").focus();
          }
          else{
          document.getElementById("textid").innerHTML = "";
