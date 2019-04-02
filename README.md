@@ -11,6 +11,7 @@
 <tr>
 <td>Name</td>
 <td><input type="text" id="textid" name="text1" value="" onblur="getValid()"/></td></tr>
+    <span id="text_valid"></span>
 <tr>
 <td colspan="2" align="center"><input type="submit" name="submit" value="submit" />
 </table>
@@ -25,11 +26,11 @@
     function getValid(){
          var text=document.getElementById('textid').value;
          if(isEmpty(text)){
-         document.getElementById("textid").innerHTML = "Enter Text";
+         document.getElementById("text_valid").innerHTML = "Enter Text";
          document.getElementById("text1").focus();
          }
          else{
-         document.getElementById("textid").innerHTML = "";
+         document.getElementById("text_valid").innerHTML = "";
          }       
     }
 </script>
